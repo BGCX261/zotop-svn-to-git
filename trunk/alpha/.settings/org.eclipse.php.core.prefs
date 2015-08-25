@@ -1,0 +1,10 @@
+#Tue Jun 16 09:18:34 CST 2009
+eclipse.preferences.version=1
+include_path=0;/zotop
+org.eclipse.php.core.phpForamtterIndentationSize=4
+org.eclipse.php.core.phpForamtterUseTabs=false
+org.eclipse.php.core.taskCaseSensitive=enabled
+org.eclipse.php.core.taskPriorities=NORMAL,HIGH,NORMAL,NORMAL
+org.eclipse.php.core.taskTags=TODO,FIXME,XXX,@todo
+phpVersion=php5
+use_asp_tags_as_php=false

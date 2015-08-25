@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><templates><template autoinsert="true" context="phpcomment" deleted="false" description="Comment for non-overriding methods" enabled="true" id="org.eclipse.php.ui.editor.templates.php.codetemplates.methodcomment" name="methodcomment">/**
+ * ${cursor}${tags}
+ */</template></templates>

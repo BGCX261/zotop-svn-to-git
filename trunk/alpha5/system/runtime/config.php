@@ -1,0 +1,157 @@
+<?php
+if (!defined('ZOTOP')) exit();
+//000000000000
+return array (
+  'zotop' => 'zotop cms',
+  'zotop.name' => 'zotop 2010 alpha',
+  'system' => '',
+  'modules' => '',
+  'zotop.title' => '猪头内容管理系统',
+  'zotop.version' => '390.2',
+  'zotop.key' => '9999-8888-9999-8888',
+  'zotop.keywords' => 'zotop cms easy cms',
+  'zotop.sign' => '猪头，猪头，我是猪头',
+  'site' => '',
+  'zotop.install' => '',
+  'zotop.install.time' => '2010-2-11 0:35:49',
+  'plugins' => '',
+  'site.name' => '猪头内容管理系统官方网站',
+  'site.status' => '1',
+  'site.title' => '猪头内容管理系统官方网站',
+  'site.keywords' => '',
+  'upload' => '',
+  'site.description' => '',
+  'site.about' => '',
+  'zotop.authors' => 'zotop.chenlei,zotop.chenyan,rebort',
+  'zotop.author' => 'zotop.chenlei',
+  'zotop.homepage' => 'http://www.zotop.com',
+  'zotop.update' => '',
+  'zotop.update.time' => '2010-2-11 1:08:22',
+  'zotop.update.url' => 'http://www.zotop.com/update/version.php',
+  'zotop.update.life' => '15',
+  'zotop.database' => 
+  array (
+    'driver' => 'mysql',
+    'hostname' => '127.0.0.1',
+    'username' => 'root',
+    'password' => '123456',
+    'hostport' => '3306',
+    'database' => 'zotopcms',
+    'charset' => 'utf8',
+    'prefix' => 'zotop_',
+  ),
+  'zotop.application' => 
+  array (
+    'admin' => 
+    array (
+      'name' => 'admin',
+      'path' => '%zotop%/admin',
+      'url' => '%zotop%/admin',
+      'base' => 'index.php',
+    ),
+    'member' => 
+    array (
+      'name' => 'member',
+      'path' => '%zotop%/member',
+      'url' => '%root%',
+      'base' => 'member.php',
+    ),
+    'site' => 
+    array (
+      'name' => 'site',
+      'path' => '%zotop%/site',
+      'url' => '%root%',
+      'base' => 'index.php',
+    ),
+    'install' => 
+    array (
+      'name' => 'install',
+      'path' => '%zotop%/install',
+      'url' => '%zotop%/install',
+      'base' => 'index.php',
+    ),
+  ),
+  'zotop.module' => 
+  array (
+    'zotop' => 
+    array (
+      'id' => 'zotop',
+      'name' => '系统核心模块',
+      'title' => '系统核心模块',
+      'description' => '系统核心模块，实现系统必须的一些基本功能',
+      'icon' => '',
+      'version' => '1',
+      'type' => 'system',
+      'path' => '$modules/zotop',
+      'url' => '$modules/zotop',
+      'status' => '0',
+      'order' => '0',
+      'installtime' => '1259394471',
+      'updatetime' => '1259394471',
+      'author' => 'zotop.chenlei',
+      'email' => 'zotop.chenlei@gmail.com',
+      'homepage' => 'http://www.zotop.com',
+    ),
+    'msg' => 
+    array (
+      'id' => 'msg',
+      'name' => '站内消息系统',
+      'title' => '站内消息',
+      'description' => '用于站内用户通信功能',
+      'icon' => '/z5/system/modules/msg/icon.png',
+      'version' => '1',
+      'type' => 'plugin',
+      'path' => '$modules/msg',
+      'url' => '$modules/msg',
+      'status' => '0',
+      'order' => '2',
+      'installtime' => '1266053168',
+      'updatetime' => '1266053168',
+      'author' => 'zotop.chenlei',
+      'email' => 'zotop.chenlei@gmail.com',
+      'homepage' => 'http://www.zotop.com',
+    ),
+    'database' => 
+    array (
+      'id' => 'database',
+      'name' => '数据库管理器',
+      'title' => '数据库管理',
+      'description' => '在线管理数据库，可以对数据库进行设置以及优化',
+      'icon' => '/z5/system/admin/themes/blue/image/skin/none.png',
+      'version' => '1',
+      'type' => 'com',
+      'path' => '$modules/database',
+      'url' => '$modules/database',
+      'status' => '0',
+      'order' => '1',
+      'installtime' => '1266048765',
+      'updatetime' => '1266048765',
+      'author' => 'zotop.chenlei',
+      'email' => 'zotop.chenlei@gmail.com',
+      'homepage' => 'http://www.zotop.com',
+    ),
+    'content' => 
+    array (
+      'id' => 'content',
+      'name' => '内容管理模块',
+      'title' => '内容管理',
+      'description' => '发布、管理站点的内容',
+      'icon' => '/z5/system/modules/content/icon.png',
+      'version' => '1',
+      'type' => 'com',
+      'path' => '$modules/content',
+      'url' => '$modules/content',
+      'status' => '0',
+      'order' => '3',
+      'installtime' => '1266076801',
+      'updatetime' => '1266076801',
+      'author' => 'zotop.chenlei',
+      'email' => 'zotop.chenlei@gmail.com',
+      'homepage' => 'http://www.zotop.com',
+    ),
+  ),
+  'zotop.router' => 
+  array (
+  ),
+);
+?>

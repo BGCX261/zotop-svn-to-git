@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+#user{
+	padding:20px 0px;
+	position:relative;
+}
+#userface{
+	float:left;
+	width:150px;
+	height:80px;
+	padding-top:20px;
+	text-align:center;
+}
+#userinfo{
+	float:left;
+}
+
+.grid-m-s{}
+.grid-m-s .col-main .col-main-inner{margin-right:320px;}
+.grid-m-s .col-sub{margin-left:-320px;width:320px;}

@@ -1,0 +1,28 @@
+<?php
+return array(
+	'admin'=>array(
+		'name'=>'admin',
+		'path'=>'$root/admin',
+		'url'=>'$root',
+		'base'=>'admin.php',
+	),
+	'member'=>array(
+		'name'=>'member',
+		'path'=>'$root/member',
+		'url'=>'$root',
+		'base'=>'member.php',
+	),
+	'site'=>array(
+		'name'=>'site',
+		'path'=>'$root/site',
+		'url'=>'$root',
+		'base'=>'index.php',	
+		),
+	'install'=>array(
+		'name'=>'install',
+		'path'=>'$root/install',
+		'url'=>'$root',
+		'base'=>'install.php',
+	),
+);
+?>

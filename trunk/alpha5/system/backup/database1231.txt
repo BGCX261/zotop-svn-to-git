@@ -1,0 +1,157 @@
+﻿-- phpMyAdmin SQL Dump
+-- version 3.1.1
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2009 年 12 月 31 日 08:56
+-- 服务器版本: 5.0.22
+-- PHP 版本: 5.2.4
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- 数据库: `zotopcms`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_config`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_config` (
+  `id` varchar(64) NOT NULL default '' COMMENT '节点编号',
+  `parentid` varchar(64) NOT NULL default '' COMMENT '父节点编号',
+  `moduleid` varchar(64) default NULL COMMENT '隶属的模块ID',
+  `title` varchar(100) default NULL COMMENT '节点名称',
+  `description` varchar(250) default NULL COMMENT '节点描述',
+  `type` varchar(64) default NULL COMMENT '节点类型',
+  `value` text COMMENT '节点数据',
+  `valid` varchar(200) default NULL COMMENT '字段验证',
+  `options` text COMMENT '节点选项',
+  `order` int(6) default NULL COMMENT '排序数字',
+  PRIMARY KEY  (`id`),
+  KEY `parentid` (`parentid`),
+  KEY `moduleid` (`moduleid`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='系统配置表，存储系统全部的配置项';
+
+--
+-- 导出表中的数据 `zotop_config`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_member`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_member` (
+  `id` int(10) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='存储会员信息用的数据表';
+
+--
+-- 导出表中的数据 `zotop_member`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_module`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_module` (
+  `id` varchar(32) NOT NULL default '' COMMENT '模型ID',
+  `name` varchar(50) default NULL COMMENT '模型名称',
+  `description` text COMMENT '模型说明',
+  `version` varchar(10) default NULL COMMENT '版本号',
+  `type` tinyint(1) default NULL COMMENT '模块类型',
+  `path` varchar(100) default NULL COMMENT '安装路径',
+  `url` varchar(100) default NULL COMMENT '访问地址',
+  `status` tinyint(1) default NULL COMMENT '模块状态',
+  `order` int(6) default NULL COMMENT '排序数字',
+  `installtime` int(10) default NULL COMMENT '安装时间',
+  `updatetime` int(10) default NULL COMMENT '更新时间',
+  `author` varchar(100) default NULL COMMENT '作者',
+  `email` varchar(100) default NULL COMMENT '开发者电子邮件',
+  `site` varchar(100) default NULL COMMENT '开发者网站',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='系统模块表，用于存储系统模块信息';
+
+--
+-- 导出表中的数据 `zotop_module`
+--
+
+INSERT INTO `zotop_module` (`id`, `name`, `description`, `version`, `type`, `path`, `url`, `status`, `order`, `installtime`, `updatetime`, `author`, `email`, `site`) VALUES
+('zotop', '核心模块', '系统核心模块', '1.0', 1, 'zotop', 'zotop', 1, 1, 1259394471, 1259394471, 'zotop.chenlei', 'zotop.chenlei@gmail.com', 'http://www.zotop.com'),
+('database', '数据库管理器', '管理数据库，添加删除数据表以及字段', '1.0', 1, 'database', 'database', 1, 1, 1259394476, 1259394476, 'zotop.chenlei', 'zotop.chenlei@gmail.com', 'http://www.zotop.com');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_test`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_test` (
+  `id` int(10) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='测试用的数据表，可以删除';
+
+--
+-- 导出表中的数据 `zotop_test`
+--
+
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_user`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_user` (
+  `id` int(10) NOT NULL COMMENT '用户ID',
+  `username` varchar(32) NOT NULL COMMENT '用户账号',
+  `password` varchar(32) default NULL COMMENT '用户密码',
+  `question` varchar(100) default NULL COMMENT '安全问题',
+  `answer` varchar(100) default NULL COMMENT '安全答案',
+  `groupid` int(6) default NULL COMMENT '用户组',
+  `modelid` varchar(32) default NULL COMMENT '用户模型编号',
+  `logintime` int(10) default NULL COMMENT '最后登录时间',
+  `loginip` char(15) default NULL COMMENT '最后登录ip',
+  `loginnum` int(6) default NULL COMMENT '登录次数',
+  `status` tinyint(1) default NULL COMMENT '用户状态',
+  `updatetime` int(10) default NULL COMMENT '更新时间',
+  `createtime` int(10) default NULL COMMENT '注册时间',
+  `name` varchar(64) default NULL COMMENT '用户姓名',
+  `gender` char(10) default NULL COMMENT '用户性别',
+  `image` varchar(100) default NULL COMMENT '用户头像',
+  `email` varchar(100) default NULL COMMENT '电子邮件',
+  `sign` varchar(200) default NULL COMMENT '用户签名',
+  `data` text COMMENT '额外数据',
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='系统用户表，用于存储用户信息';
+
+--
+-- 导出表中的数据 `zotop_user`
+--
+
+INSERT INTO `zotop_user` (`id`, `username`, `password`, `question`, `answer`, `groupid`, `modelid`, `logintime`, `loginip`, `loginnum`, `status`, `updatetime`, `createtime`, `name`, `gender`, `image`, `email`, `sign`, `data`) VALUES
+(1, 'admin', 'admin999', 'yourname', 'chenlei', 0, '', 1262184573, '127.0.0.2', 66, 1, 1259392934, 0, '陈磊', '男', '/my/zotop/admin/themes/blue/image/userface/1.gif', 'hankx_chen@qq.com', '好好工作，快乐生活', '');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `zotop_usergroup`
+--
+
+CREATE TABLE IF NOT EXISTS `zotop_usergroup` (
+  `id` int(10) NOT NULL,
+  PRIMARY KEY  (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8 COMMENT='用户组数据表';
+
+--
+-- 导出表中的数据 `zotop_usergroup`
+--
+

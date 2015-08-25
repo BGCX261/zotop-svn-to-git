@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+/*golbal*/
+html{color:#444;line-height:22px;font-size:12px;font-family:Tahoma,Verdana,sans-serif,simsun;overflow-x:hidden;}
+body {text-align:center;background:url(../image/bg.jpg) no-repeat fixed center center;}
+#wrapper{text-align:left;margin:0px auto;position:relative;width:980px;}
+#page{}
+#header{}
+#top{}
+#body{}
+#footer{border-top:1px solid #ebebeb;margin-top:5px;background:#f7f7f7;padding:5px;}
+#bottom{}
+#powered{text-align:left;line-height:20px;font-family:arial;font-size:10px;color:#999;}
+#powered a,div#powered b{font-weight:normal;padding:0px 3px;}
+#logo{float:left;width:200px;height:60px;overflow:hidden;background:url(../image/logo.png) no-repeat center center;_background:url(../image/logo-ie6.png) no-repeat center center;}
+#topbar{position:absolute;top:0px;right:0px;}
+#topbar a{color:#fff;}
+#navbar{clear:both;}
+#position{color:#fff;padding:3px;}
+
+.grid-m-s{}
+.grid-m-s .column-main .column-main-inner{margin-left:0px;margin-right:310px;border:solid 1px #ebebeb;background:#f7f7f7;}
+.grid-m-s .column-sub{margin-left:-300px;width:300px;background:#f7f7f7;}
+.grid-m-s .column-sub-inner{}
+
+
+/*msg*/
+body.msg{text-align:left;margin:0px;overflow:hidden;background:#f9fcff;}
+body.msg #wrapper{width:auto;padding:0px;margin:0px;text-align:left;background:#f9fcff url(../image/bodybg.jpg) repeat-x left top;}
+
+body.msg #icon {float:left;width:80px;height:80px;margin-top:30px;text-align:center;}
+body.msg #msg{margin:10px 5px;margin-left:80px;position:relative;}
+
+body.msg #msg-title{font-size:18px;line-height:40px;font-weight:bold;border-bottom:solid 2px #c1d9f3;}
+body.msg #msg-content{padding:15px 0px 10px 0px;font-size:14px;font-weight:bold;}
+body.msg #msg-detail{margin-bottom:8px;}
+body.msg #msg-url{}
+body.msg #msg-type{display:none;}
+body.msg #msg-life{display:none;}
+body.msg #msg-file{display:none;}
+body.msg #msg-line{display:none;}
+body.msg #powered {margin-top:20px;text-align:left;background:#eff7ff;font-size:12px;padding:5px 8px;color:#999;}
+
+body.msg .error,
+body.msg .success{color:#333;}
+body.msg .error #msg-content h2{color:#ff0000;}
+body.msg .success #msg-content h2{color:#7abd27;}
+body.msg ul.list li{border:0;}
+body.msg .clear{_display:none;}
+
+
+/*dialog*/
+body.dialog{text-align:left;overflow:hidden;background:transparent;min-width:580px;}
+body.dialog #wrapper{margin:0px;background:#f9fcff url(../image/bodybg.jpg) repeat-x left top;}
+body.dialog #system{height:80px;padding:0px 20px;background:#fff url(../image/zotop.jpg) no-repeat top right;}
+body.dialog div#body{background:transparent;}
+body.dialog div#footer{border:0px;padding:0px;margin:0px;}
+body.dialog div#powered{display:none;}
+body.dialog .buttons{text-align:right;}
+body.dialog iframe{height:100%;width:100%;border:0px;background:transparent;}
+body.dialog .form{}
+body.dialog .form-header{padding-top:8px;background:#fff url(../image/zotop.jpg) no-repeat top right;}
+body.dialog .form-title{}
+body.dialog .form-description{}
+body.dialog .form-body{background:transparent;}
+body.dialog .form-footer-sub{top:6px;left:5px;right:auto;}
+body.dialog input.text,body.dialog input.password,body.dialog textarea{width:360px;}
+body.dialog select.select{width:372px;}
+body.dialog textarea{height:50px;}
+body.dialog .clear{_display:none;}
+body.dialog div.pagination ul{float:left;}
+
+
+
+
+body.detail div.detail{text-align:left;width:100%;overflow:hidden;}
+body.detail div.title{text-align:left;border-bottom:dotted 1px #ebebeb;margin:8px;padding:5px;}
+body.detail div.title h1{}
+body.detail div.title h2{font-size:12px;font-weight:normal;}
+body.detail div.summary{
+	background: white;
+	border: 1px solid #DCDDDD;
+	font-size: 14px;
+	line-height: 23px;
+	margin:15px 15px;
+	padding:12px 5px 6px;
+	text-align: justify;
+	text-indent: 2em;
+}
+body.detail div.content{
+	text-align:left;
+	font-size:14px;
+	line-height:22px;
+	margin:5px 15px;
+	clear: both;
+	font-size: 14px;
+	line-height: 23px;
+	overflow: hidden;
+	text-align: justify;
+	word-wrap: break-word;
+}
+
+body.list div.list ul li{margin:8px;}
+body.list div.list ul li div.title{text-align:left;padding:0px 12px;border-left:solid 5px #666;background:#fff;}
+body.list div.list ul li div.title h2{}
+body.list div.list ul li div.title h3{font-size:12px;font-weight:normal;color:#999;}
+body.list div.list ul li div.title h3 a{color:#999;}
+body.list div.list ul li div.summary{text-align:left;font-size:12px;line-height:22px;margin:3px;padding:3px;}

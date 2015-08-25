@@ -1,0 +1,186 @@
+<?php
+if (!defined('ZOTOP')) exit();
+//000000000000
+return array (
+  'id' => 
+  array (
+    'name' => 'id',
+    'type' => 'varchar',
+    'length' => '64',
+    'null' => 'NO',
+    'key' => 'PRI',
+    'default' => '0',
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段编号',
+  ),
+  'modelid' => 
+  array (
+    'name' => 'modelid',
+    'type' => 'varchar',
+    'length' => '32',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '模型编号',
+  ),
+  'name' => 
+  array (
+    'name' => 'name',
+    'type' => 'varchar',
+    'length' => '64',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段名称',
+  ),
+  'label' => 
+  array (
+    'name' => 'label',
+    'type' => 'varchar',
+    'length' => '100',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段标签',
+  ),
+  'field' => 
+  array (
+    'name' => 'field',
+    'type' => 'varchar',
+    'length' => '64',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段类型',
+  ),
+  'value' => 
+  array (
+    'name' => 'value',
+    'type' => 'text',
+    'length' => '',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '默认数据',
+  ),
+  'valid' => 
+  array (
+    'name' => 'valid',
+    'type' => 'varchar',
+    'length' => '255',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '数据验证',
+  ),
+  'description' => 
+  array (
+    'name' => 'description',
+    'type' => 'varchar',
+    'length' => '255',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段描述',
+  ),
+  'settings' => 
+  array (
+    'name' => 'settings',
+    'type' => 'text',
+    'length' => '',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '高级设置',
+  ),
+  'type' => 
+  array (
+    'name' => 'type',
+    'type' => 'varchar',
+    'length' => '64',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => 'utf8_general_ci',
+    'extra' => '',
+    'comment' => '字段类型',
+  ),
+  'maxlength' => 
+  array (
+    'name' => 'maxlength',
+    'type' => 'int',
+    'length' => '10',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => NULL,
+    'extra' => '',
+    'comment' => '字段长度',
+  ),
+  'required' => 
+  array (
+    'name' => 'required',
+    'type' => 'tinyint',
+    'length' => '1',
+    'null' => 'YES',
+    'key' => '',
+    'default' => '0',
+    'collation' => NULL,
+    'extra' => '',
+    'comment' => '必填字段',
+  ),
+  'system' => 
+  array (
+    'name' => 'system',
+    'type' => 'tinyint',
+    'length' => '1',
+    'null' => 'YES',
+    'key' => '',
+    'default' => '0',
+    'collation' => NULL,
+    'extra' => '',
+    'comment' => '是否系统字段',
+  ),
+  'order' => 
+  array (
+    'name' => 'order',
+    'type' => 'int',
+    'length' => '10',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => NULL,
+    'extra' => '',
+    'comment' => '排序',
+  ),
+  'status' => 
+  array (
+    'name' => 'status',
+    'type' => 'tinyint',
+    'length' => '1',
+    'null' => 'YES',
+    'key' => '',
+    'default' => NULL,
+    'collation' => NULL,
+    'extra' => '',
+    'comment' => '状态',
+  ),
+);
+?>
